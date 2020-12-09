@@ -1,0 +1,127 @@
+.painel-branco-sale{
+  background-color: rgba(255,255, 255);
+  position: absolute;
+  margin-left: 10%;
+  width: 80%;
+  box-shadow: 0 0 15px 9px #00000096;
+  margin-top: 1%;
+  padding: 20px;
+  height: 700px;
+  border-radius: 5px;
+}
+
+.active-cyan-2 input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #4dd0e1;
+  box-shadow: 0 1px 0 0 #4dd0e1;
+}
+
+.icon-search{
+  position: relative;
+  margin-top: -4.2%;
+  margin-left: 71%;
+}
+
+#searcher{
+  margin-left: 30%;
+  width: 40%;
+  padding: 0.5%;
+}
+
+.form-sale{
+  padding: 40px;
+}
+
+.form-sale input[type="text"], .form-sale input[type="number"]{
+  width: 30%;
+  margin-top: 15px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #b5b5b5;
+  outline: none;
+  border-radius: 5px;
+}
+
+#name-medicine{
+  margin-right: 20px;
+}
+
+#lote{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#price{
+  margin-left: 12px;
+}
+
+#description{
+  margin-left: 23px;
+}
+
+.image-medicine{
+  position: absolute;
+  left: 75%;
+  top: 18.2%;
+  width: 20%;
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-medicine img{
+  max-width: 100%;
+  max-height: 100%;
+  background-size: cover;
+}
+
+.add{
+  max-width: 150px;
+  width: 100%;
+  background: #444444;
+  color: #f9f9f9;
+  border: none;
+  padding: 10px;
+  border-radius: 2px;
+  margin-left: 40%;
+  margin-top: 2%;
+  display: block  ;
+}
+
+.total-value{
+  margin-left: 35%;
+  margin-top: 10%;
+}
+
+.total{
+  margin-left: 20px;
+}
+
+.checkout{
+  max-width: 150px;
+  width: 100%;
+  background: #444444;
+  color: #f9f9f9;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  margin-left: 40%;
+  margin-top: 1%;
+  cursor:pointer;
+}
+
+#link-modal-selected{
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 5%;
+}
+
+#lupa{
+  width: 3%;
+  height: 3%;
+  margin-left: 1%;
+}
+
+
+

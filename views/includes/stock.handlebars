@@ -1,0 +1,16 @@
+<div class="grid-container">
+  {{#each medicines}}
+    {{#each this}}
+      {{#if name_medicine}}
+        <a href="update/{{user}}/{{bar_code}}">
+          <div class="grid-item">
+          <div class="image">
+            <img src="/{{image_name}}" alt="Medicamentos">
+          </div>
+          <p><strong>{{name_medicine}}</strong> <br> {{description}} <br> <strong>Quantidade:</strong> {{amount}} <br> <strong>Valor: </strong> {{sale_value}}R$</p>
+        </div>
+        </a>
+      {{/if}}
+    {{/each}}
+  {{/each}}
+</div>

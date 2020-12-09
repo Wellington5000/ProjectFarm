@@ -1,0 +1,51 @@
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 15px 15px;
+  margin-top: 1%;
+  margin-left: 2%;
+  text-align: center;
+}
+
+.grid-item{
+  border-radius: 5px;
+  background-color: white;
+  height: 320px;
+  width: 300px;
+}
+
+.image{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image img{
+  max-width: 70%;
+  max-height: 70%;
+  background-size: cover;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label{
+  top: 8px;
+  bottom: 10px;
+  left: 20px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+.inputText {
+  font-size: 14px;
+  width: 200px;
+  height: 35px;
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 18px;
+  transition: 0.2s ease all;
+}

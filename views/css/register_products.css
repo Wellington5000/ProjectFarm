@@ -1,0 +1,45 @@
+.painel-branco-stock{
+  background-color: rgba(255,255, 255);
+  position: absolute;
+  margin-left: 30%;
+  width: 40%;
+  box-shadow: 0 0 15px 9px #00000096;
+  margin-top: 1%;
+  padding: 20px;
+  height: 700px;
+  border-radius: 5px;
+}
+
+.form-stock input[type="text"], .form-stock input[type="number"], .form-stock input[type="date"], .form-stock input[type="file"]{
+    width: 90%;
+    display: block;
+    margin-top: 15px;
+    margin-left: 30px;
+    padding: 10px;
+    border: 1px solid #b5b5b5;
+    outline: none;
+}
+
+.form-stock input[type="file"]{
+  width: 90%;
+  display: block;
+  margin-top: 20px;
+  margin-left: 30px;
+  padding: 5px;
+  border: 1px solid #b5b5b5;
+  outline: none;
+  border-radius: 5px;
+}
+
+.form-stock input[type="submit"]{
+  max-width: 150px;
+  width: 100%;
+  background: #444444;
+  color: #f9f9f9;
+  border: none;
+  padding: 10px;
+  border-radius: 2px;
+  margin-top: 2%;
+  cursor:pointer;
+  margin-left: 7%;
+}

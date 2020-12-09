@@ -1,0 +1,49 @@
+<form action="saveMedicine" method="POST" enctype="multipart/form-data">
+  <div class="painel-branco-stock">
+    <div class="form-stock">
+      <h2>Novo Medicamento</h2>
+            <div class="label-float">
+              <input type="text" id=" " placeholder=" " name="bar_code" required>
+              <label for="bar_code">Código de Barras</label>
+            </div>
+
+            <div class="label-float">
+              <input type="text" id=" " placeholder=" " name="name_medicine" required>
+            <label for="name_medicine">Nome do Medicmento</label>
+            </div>
+
+            <div class="label-float"> 
+              <input type="text" id=" " placeholder=" " name="description" required>
+              <label for="description">Descrição</label>
+            </div>
+
+            <div class="label-float"> 
+              <input id="lote" type="text" placeholder=" " name="lote" required>
+              <label for="lote">Lote</label>
+            </div>
+
+            <div class="label-float"> 
+              <input id="shelf_life" type="text" placeholder=" " name="shelf_life" required onfocus="(this.type='date')">
+              <label for="shelf_life">Validade</label>
+            </div>
+
+            <div class="label-float"> 
+              <input type="number" id="acquired_value" placeholder=" " name="acquired_value" pattern="[0-9]+([,\.][0-9]+)?" min="0" step="any" required>
+              <label for="acquired_value">Valor adquirido</label>
+            </div>
+
+            <div class="label-float"> 
+              <input type="number" id="sale_value" placeholder=" " name="sale_value" pattern="[0-9]+([,\.][0-9]+)?" min="0" step="any" required>
+              <label for="sale_value">Valor de Venda</label>
+            </div>
+
+            <div class="label-float"> 
+              <input type="number" id="amount" placeholder=" " name="amount" required>
+              <label for="amount">Quantidade</label>
+            </div>
+
+            <input type="file" name="image">
+            <input type="submit" value="SALVAR">
+    </div>
+  </div>
+ </form>

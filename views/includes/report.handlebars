@@ -1,0 +1,85 @@
+<head>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js'></script>
+</head>
+
+<div class="form-report">
+  <div class="bar-filter">
+    <div class="filter">
+      <div>
+        Filtros
+        <select id="combo-box" onchange="comboSelected()">
+          <option selected>Todos</option>
+          <option>Código de Barras</option>
+          <option>Nome</option> 
+          <option>Data</option>
+          <option>Mais Vendido</option>
+          <option>Menos Vendido</option>
+        </select>
+      </div>
+
+      <div class="filter-bar-code" id="filter-bar-code" hidden>
+        <div>
+          Código de Barras
+          <input autofocus id="field-bar-code" type="text" required>
+        </div>
+        <button onclick="search()" id="btn-find-bar-code">Buscar</button>
+      </div>
+
+      <div class="filter-name" id="filter-name" hidden>
+        <div class="field-name-1">
+          Nome
+          <input id="field-name" type="text" required>
+        </div>
+        <button onclick="search()" id="btn-find-name">Buscar</button>
+      </div>
+
+      <div class="filter-date" hidden id="filter-date">
+        <div>
+          De
+          <input id="field-date1" type="date" required>
+        </div>
+        <div class="field-date-2">
+          Até
+          <input id="field-date2" type="date" required>
+        </div>
+        <button onclick="search()" id="btn-find-date">Buscar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="table">
+    <table border="1" id="table" >
+      <tr>
+        <th>Código de Barras</th>
+        <th>Nome</th>
+        <th>Quantidade</th>
+        <th>Valor</th>
+        <th>Data</th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="quadrados">  
+    <div id="quadrado1">
+      <p class="header">Número de Vendas</p>
+      <p class="info" id="info1">273</p>
+    </div>
+
+    <div id="quadrado2">
+      <p class="header">Valor Bruto</p>
+      <p class="info" id="info2">10.258</p>
+    </div>
+
+    <div id="quadrado3">
+      <p class="header">Valor Líquido</p>
+      <p class="info" id="info3">5.542</p>
+    </div>
+
+    <div id="quadrado4">
+      <p class="header">Porcentagem de Lucros</p>
+      <p class="info" id="info4">55%</p>
+    </div>
+  </div>
+</div>
+<p id="userId" hidden>{{userId}}</p>
+<script src="/report.js" type="text/javascript"></script>

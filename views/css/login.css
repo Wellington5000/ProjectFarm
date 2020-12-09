@@ -1,0 +1,79 @@
+
+body{
+  font-family: 'Mukta', sans-serif;
+	height:100vh;
+	min-height:550px;
+	background-image: url('fundo-login.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	position:relative;
+    overflow-y: hidden;
+}
+
+.painel-de-fundo{
+    position: absolute;
+    opacity: 0.9;
+    top: 50%;
+    transform: translateY(-50%);
+	text-align:center;
+    width:70%;
+	right:0;left:0;
+    margin:auto;
+    height:400px;
+    background-color: rgba(50, 41, 47);
+}
+
+.painel-de-fundo{
+    color:rgb(255, 255, 255);
+}
+
+.painel-branco{
+    background-color: rgba(255,255, 255);
+    height:570px;
+    position: absolute;
+    margin-top:-60px;
+    width:28%;
+    margin-left: 20%;
+    box-shadow: 0 0 15px 9px #00000096;
+}
+
+.texto-logo{
+    position: absolute;
+    padding:5px 5px;
+    width:150px;
+    margin-left: 72%;
+    margin-top: 5%;
+    font-size: 18px;
+}
+
+.painel-branco{
+    padding:50px;
+    top:20%;
+    left:0;
+    position:absolute;
+    text-align:left;
+}
+
+.painel-branco input[type="text"], .painel-branco input[type="password"]{
+    width: 100%;
+    display: block;
+    margin:20px 0;
+    padding: 15px;
+    border: 1px solid #b5b5b5;
+    outline: none;
+}
+
+.painel-branco input[type="submit"] {
+    max-width: 150px;
+    width: 100%;
+    background: #444444;
+    color: #f9f9f9;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    float:right;
+    cursor:pointer;
+}
+

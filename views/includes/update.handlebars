@@ -1,0 +1,57 @@
+{{#each medicine}}
+  {{#if user}}
+     <form action="/updateMedicine/{{user}}/{{bar_code}}" method="POST" enctype="multipart/form-data">
+      <div class="painel-branco-stock">
+        <div class="form-stock">
+          <h2>Atualizar Medicamento</h2>
+            
+                <div class="label-float">
+                  <input type="text" id=" " placeholder=" " name="bar_code" value="{{bar_code}}">
+                  <label for="bar_code">Código de Barras</label>
+                </div>
+
+                <div class="label-float">
+                  <input type="text" id=" " placeholder=" " name="name_medicine" required value='{{name_medicine}}'>
+                <label for="name_medicine">Nome do Medicmento</label>
+                </div>
+
+                <div class="label-float"> 
+                  <input type="text" id=" " placeholder=" " name="description" required value='{{description}}'>
+                  <label for="description">Descrição</label>
+                </div>
+
+                <div class="label-float"> 
+                  <input id="lote" type="text" placeholder=" " name="lote" required value={{lote}}>
+                  <label for="lote">Lote</label>
+                </div>
+
+                <div class="label-float"> 
+                  <input id="shelf_life" type="date" placeholder=" " name="shelf_life" required 
+                  value={{#formatDate shelf_life}}{{/formatDate}}>
+                  <label for="shelf_life">Validade</label>
+                </div>
+
+                <div class="label-float"> 
+                  <input type="number" id="acquired_value" placeholder=" " name="acquired_value" required value={{acquired_value}}>
+                  <label for="acquired_value">Valor Adquirido</label>
+                </div>
+
+                <div class="label-float"> 
+                  <input type="number" id="sale_value" placeholder=" " name="sale_value" required value={{sale_value}}>
+                  <label for="sale_value">Valor de Venda</label>
+                </div>
+
+                <div class="label-float"> 
+                  <input type="number" id="amount" placeholder=" " name="amount" required value={{amount}}>
+                  <label for="amount">Quantidade</label>
+                </div>
+                
+                <input id="btn-cancel" type="submit" formaction="/items-stock" formmethod="GET" value="Cancelar">
+                <input id="btn-delete" type="submit" formaction="/deleteItem/{{user}}/{{bar_code}}" value="Excluir">
+                <input id="btn-update" type="submit" value="Atualizar">
+             
+        </div>
+      </div>
+     </form>
+ {{/if}}
+{{/each}}
