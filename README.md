@@ -21,3 +21,5 @@
 <h2>Venda com imagens dos produtos ao lado</h2>
 <img src="https://user-images.githubusercontent.com/56002729/102715003-2efe6280-42b1-11eb-8070-021b4ebe409e.JPG">
 
+<h2>Relatório de vendas com filtros de busca</h2>
+<img src="https://user-images.githubusercontent.com/56002729/102715092-adf39b00-42b1-11eb-9b88-be6c72204fb5.JPG">
