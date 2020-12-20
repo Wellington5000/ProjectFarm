@@ -15,4 +15,8 @@
 </ul>
 
 <h2>Senhas criptografadas e autenticação via JsonWebToken</h2>
-![login](https://user-images.githubusercontent.com/56002729/102714802-f8741800-42af-11eb-9a13-fd47f26afacd.JPG)
+<img src="https://user-images.githubusercontent.com/56002729/102714802-f8741800-42af-11eb-9a13-fd47f26afacd.JPG">
+
+
+<h2>Venda com imagens dos produtos ao lado</h2>
+
