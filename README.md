@@ -6,7 +6,7 @@
   </li>  
   
   <li>
-		Projeto criado para aprofundar conhecimento nas linguagens Node.js, JavaScript, HTML5 e CSS.
+		Projeto criado para aprofundar conhecimento nas linguagens Node.js, JavaScript, HTML5 e CSS3.
   </li>  
   
   <li>
